@@ -34,10 +34,7 @@ switch ($method) {
         break;
 
     case 'POST':
-        $input = json_decode(file_get_contents('php://input'), true);
-        $stmt = $pdo->prepare('INSERT INTO tu_tabla (campo1, campo2) VALUES (?, ?)');
-        $stmt->execute([$input['campo1'], $input['campo2']]);
-        echo json_encode(['status' => 'success']);
+        echo "post";
         break;
 
     // Agrega más casos para PUT, DELETE, etc.
