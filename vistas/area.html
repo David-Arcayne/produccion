@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Agregar área</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="nombreArea">Nombre área:</label>
+                <input type="text" class="form-control" id="nombreArea">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="codigoArea">Código área:</label>
+                <input type="text" class="form-control" id="codigoArea">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" class="form-control" id="ubicacion">
+            </div>
+            <div class="form-group col-md-3">
+                <label>.</label>
+                <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+            </div>
+        </div>
+    </form>
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>N°</th>
+                <th>Area</th>
+                <th>Codigo area</th>
+                <th>Ubicacion</th>
+                <th>Fecha registro</th>
+                <th>Funciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Almacen</td>
+                <td>ALM</td>
+                <td>A la derecha de la entrada</td>
+                <td>10/05/2023</td>
+                <td>
+                    <button class="btn btn-sm btn-primary">Editar</button>
+                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <!-- Más filas pueden agregarse aquí -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

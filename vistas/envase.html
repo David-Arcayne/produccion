@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de envases</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Registro de envases</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="nombreEnvase">Nombre envase:</label>
+                <input type="text" class="form-control" id="nombreEnvase" placeholder="Ejemplo: Saco">
+            </div>
+           
+        </div>
+        <button type="submit" class="btn btn-success btn-block">Registrar</button>
+    </form>
+
+    <!-- Tabla -->
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">N°</th>
+                <th scope="col">Envase</th>
+                <th scope="col">Fecha registro</th>
+                <th scope="col">Funciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saco</td>
+                <td>10/05/2023</td>
+                <td>
+                    <button class="btn btn-sm btn-primary">Editar</button>
+                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Barril</td>
+                <td>10/05/2023</td>
+                <td>
+                    <button class="btn btn-sm btn-primary">Editar</button>
+                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

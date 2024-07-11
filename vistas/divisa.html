@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #agre{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Registrar divisa</h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="currencyName">Nombre moneda</label>
+              <input type="text" class="form-control" id="currencyName" placeholder="Bolivianos">
+            </div>
+            <div class="col-md-6">
+              <label for="isoCode">Iso code</label>
+              <input type="text" class="form-control" id="isoCode" placeholder="Bs">
+            </div>
+          </div>
+          
+          <button class="btn btn-outline-success mr-1" id="agre" href="#">Guardar</button>
+
+         
+           
+        </form>
+      
+        <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col">N°</th>
+                  <th scope="col">Moneda</th>
+                  <th scope="col">Iso code</th>
+                  <th scope="col">Fecha Registro</th>
+                  <th scope="col">Funciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Bolivianos</td>
+                  <td>Bs</td>
+                  <td>10/05/2023</td>
+                  <td>
+                      <button class="btn btn-sm btn-primary">Editar</button>
+                      <button class="btn btn-sm btn-danger">Eliminar</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Dolar</td>
+                  <td>$</td>
+  
+                  <td>10/05/2023</td>
+                  <td>
+                      <button class="btn btn-sm btn-primary">Editar</button>
+                      <button class="btn btn-sm btn-danger">Eliminar</button>
+                  </td>
+              </tr>
+             
+              <!-- Filas de datos aquí -->
+          </tbody>
+      </table>
+        
+      </div>
+      
+    
+</body>
+</html>
